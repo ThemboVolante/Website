@@ -4,46 +4,253 @@
 <head>
   <meta charset="utf-8">
   <title>Thembo Volante</title>
-  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
-  <script type='text/javascript'>
-
-      $(function(){
-
-          var iFrames = $('iframe');
-
-      	function iResize() {
-
-      		for (var i = 0, j = iFrames.length; i < j; i++) {
-      		  iFrames[i].style.height = iFrames[i].contentWindow.document.body.offsetHeight + 'px';}
-      	    }
-
-          	if ($.browser.safari || $.browser.opera) {
-
-          	   iFrames.load(function(){
-          	       setTimeout(iResize, 0);
-                 });
-
-          	   for (var i = 0, j = iFrames.length; i < j; i++) {
-          			var iSource = iFrames[i].src;
-          			iFrames[i].src = '';
-          			iFrames[i].src = iSource;
-                 }
-
-          	} else {
-          	   iFrames.load(function() {
-          	       this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
-          	   });
-          	}
-
-          });
-
-  </script>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
   <center>
-    <iframe frameborder=0 src="menu.html" title="Menu" width=25% scrolling="no" class="iframe"/>
-    <iframe frameborder=0 src="main.html" title="Main" width="70%" scrolling="no" class="iframe"/>
+
+    <table border="0" cellspacing="0" cellpadding="5">
+      <tr>
+        <td width="550" valign="Top">
+          <center>
+            <img src="portrait01.png" />
+            <br />
+            <h1>Thembo Volante</h1>
+            <h3>38 | United States</h3>
+            <hr />
+            <h3>About Me</h3>
+            <h3><a target="Main" href="projects.html">Projects</a></h3>
+            <h3><a target="Main" href="hobbies.html">Other Hobbies</a></h3>
+            <h3><a target="Main" href="contact.html">Contact</a></h3>
+          </center>
+        </td>
+        <td width="800" valign="top">
+          <center>
+            <h1>About Me</h1>
+          </center>
+          <hr />
+          <p>
+            Welcome to my page! My name Jess. For as long as I can remember I've wanted to make video games. But it's always been a private ambition; Something I would pursue in my personal time, never the focus of my career.
+          </p>
+          <p>
+            In 2021, in the wake of the Coronavirus pandemic, I decided that my career had taken me as far as it could. I believe that happiness comes from achieving goals, and because I no longer had any ambitions for my career, I was no longer
+            happy in my career. I made a decision to commit myself to developing the skills and experience I would to become a professional game developer.
+          </p>
+          <p>
+            This website is a chronicle of that journey.
+          </p>
+          <br />
+          <Center>
+            <h1>Skills & Proficiencies</h1>
+            <hr />
+          </Center>
+          <p>
+            Below is a list, detailed but not exhaustive, of all the software I have used in the pursuit of my goals and a modest self-assessment of my comfort level with it's use. I will update this list occasionally as the adventure
+            continues. The scores assigned are as follows:
+          </p>
+
+          <center>
+
+            <table>
+              <tr>
+                <td width=200>
+                  <ul>
+                    <li>⭐ </li>
+                  </ul>
+                </td>
+                <td width=400><strong>- I am familliar with this skill.</strong></td>
+              </tr>
+              <tr>
+                <td width=200>
+                  <ul>
+                    <li>⭐⭐ </li>
+                  </ul>
+                </td>
+                <td width=400><strong>- I have some training with this skill.</strong></td>
+              </tr>
+              <tr>
+                <td width=200>
+                  <ul>
+                    <li>⭐⭐⭐ </li>
+                  </ul>
+                </td>
+                <td width=400><strong>- I have completed a personal project with this skill.</strong></td>
+              </tr>
+              <tr>
+                <td width=200>
+                  <ul>
+                    <li>⭐⭐⭐⭐ </li>
+                  </ul>
+                </td>
+                <td width=400><strong>- I have completed a professional project with this skill.</strong></td>
+              </tr>
+              <tr>
+                <td width=200>
+                  <ul>
+                    <li>⭐⭐⭐⭐⭐ </li>
+                  </ul>
+                </td>
+                <td width=400><strong>- I could fabricate anything required with this skill.</strong></td>
+              </tr>
+            </table>
+
+<!- This is where the actual skill tables begin />
+
+            <table width=300 border=0 cellspacing=0 cellpadding=5>
+              <th colspan="2">
+                <h3>Software Development</h3>
+              </th>
+              <tr>
+                <td width=200>C#</td>
+                <td width=100>⭐ </td>
+              </tr>
+              <tr>
+                <td>CSS 3.0</td>
+                <td>⭐⭐ </td>
+              </tr>
+              <tr>
+                <td>GML</td>
+                <td>⭐⭐</td>
+              </tr>
+              <tr>
+                <td>HTML 5.0</td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Javascript</td>
+                <td>⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>⭐</td>
+              </tr>
+              <tr>
+                <td>QBasic</td>
+                <td>⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Unity</td>
+                <td>⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Visual Basic 4.0</td>
+                <td>⭐⭐</td>
+              </tr>
+              <tr>
+                <td>XML</td>
+                <td>⭐</td>
+              </tr>
+            </table>
+
+            <br />
+
+            <table width=300 border=0 cellspacing=0 cellpadding=5>
+              <th colspan="2">
+                <h3>Design & Illustration</h3>
+              </th>
+              <tr>
+                <td width=200>Adobe Acrobat DC</td>
+                <td width=100>⭐⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Adobe Illustrator CS</td>
+                <td>⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Adobe Photoshop CS</td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Marmoset Hexels 3</td>
+                <td>⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Quark xPress 4.0</td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+            </table>
+
+            <br />
+
+            <table width=300 border=0 cellspacing=0 cellpadding=5>
+              <th colspan="2">
+                <h3>3D Modeling & CAD</h3>
+              </th>
+              <tr>
+                <td width=200>Blender</td>
+                <td width=100>⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>trueSpace</td>
+                <td width=100>⭐⭐⭐⭐</td>
+              </tr>
+            </table>
+
+            <br />
+
+            <table width=300 border=0 cellspacing=0 cellpadding=5>
+              <th colspan="2">
+                <h3>Audio & Video Production</h3>
+              </th>
+              <tr>
+                <td width=200>Adobe Premiere CS</td>
+        </td>
+        <td width=100>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Audacity</td>
+        </td>
+        <td width=100>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>OBS Studio</td>
+        </td>
+        <td width=100>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Sony Vegas</td>
+        </td>
+        <td width=100>⭐⭐⭐⭐</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <table width=300 border=0 cellspacing=0 cellpadding=5>
+      <th colspan="2">
+        <h3>Office & Productivity</h3>
+      </th>
+      <tr>
+        <td width=200>Adobe Premiere CS</td>
+        </td>
+        <td width=100>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Audacity</td>
+        </td>
+        <td width=100>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>OBS Studio</td>
+        </td>
+        <td width=100>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Sony Vegas</td>
+        </td>
+        <td width=100>⭐⭐⭐⭐⭐</td>
+      </tr>
+    </table>
+
+  </center>
+  </td>
+  </tr>
+  </table>
+  </center>
+  </td>
+  </tr>
+  </table>
   </center>
 </body>
 

@@ -1,0 +1,38 @@
+  BODY {
+    height: auto;
+    background-color: #F3F1F5;
+    font-family: "Tahoma";
+    font-size: 14px;
+  }
+
+  P {
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 0.25in;
+    margin-left: 0.1in;
+    margin-right: 0.1in;
+    margin-bottom: 0.1in;
+  }
+
+  H1 {
+    font-family: "Tahoma", sans-serif;
+  }
+
+  H3 {
+    font-family: "Tahoma", sans-serif;
+  }
+
+  HR {
+    border: 10px solid #BFA2DB;
+    border-radius: 5px;
+    width: 60%;
+  }
+
+  IFRAME {
+    border: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+  }
